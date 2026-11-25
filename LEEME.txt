@@ -1,0 +1,4 @@
+Diglet Aventuras - sitio listo para cargar en hosting estático.
+Sube index.html, styles.css, app.js y carpeta assets a la raíz del hosting.
+Para el QR, usa la URL HTTPS pública, no una ruta local de archivos.
+Los juegos premian el aprendizaje, nunca la toma de suplementos.

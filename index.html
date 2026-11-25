@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#087bd6">
+  <meta name="description" content="Diglet Aventuras: descubre la vitamina D3, conoce tu empaque y juega con Digi. Información para cuidadores basada en fuentes de salud.">
+  <title>Diglet Aventuras | Aprende y juega con Digi</title>
+  <link rel="icon" href="assets/fresa.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" id="inicio">
+    <div class="nav-shell">
+      <a class="brand" href="#inicio" aria-label="Diglet Aventuras, inicio"><span class="brand-sun" aria-hidden="true">☀</span><span>Diglet<span class="brand-dot">.</span></span></a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="#aprender">Aprende</a>
+        <a href="#aventuras">Juega</a>
+        <a href="#progreso">Mi progreso</a>
+        <a href="#adultos" class="nav-adults">Para adultos</a>
+      </nav>
+      <button id="soundBtn" class="sound-button" type="button" aria-label="Activar sonidos" aria-pressed="false" title="Activar o desactivar sonidos">♪ <span>Sonidos</span></button>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero sky" aria-labelledby="hero-title">
+      <div class="hero-sun" aria-hidden="true">✦</div>
+      <div class="cloud cloud-1" aria-hidden="true"></div><div class="cloud cloud-2" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> ¡Bienvenidos, exploradores de 4 a 12 años!</span>
+          <img src="assets/diglet_logo.webp" class="hero-logo" alt="Diglet Vitamina D, masticable infantil" >
+          <h1 id="hero-title">¡Hola, pequeño <em>explorador!</em></h1>
+          <p>¡Soy Digi! Vamos a descubrir por qué la vitamina D y el calcio son buenos compañeros para cuidar nuestros huesos.</p>
+          <div class="hero-actions">
+            <a class="button button-sun" href="#aprender">¡Quiero aprender! <span aria-hidden="true">➜</span></a>
+            <a class="button button-white" href="#aventuras">Ver los juegos <span aria-hidden="true">🎮</span></a>
+          </div>
+          <div class="hero-note"><span aria-hidden="true">✦</span> Aprender es gratis. Jugar no requiere tomar una vitamina.</div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-halo"></div>
+          <span class="bubble bubble-one">¡Hola!</span>
+          <span class="spark spark-a">✦</span><span class="spark spark-b">✷</span>
+          <img class="hero-digi" src="assets/digi_heroe.webp" alt="">
+          <span class="strawberry-bubble"><img src="assets/fresa.webp" alt=""> ¡Sabor fresa!</span>
+        </div>
+      </div>
+      <div class="hero-hills" aria-hidden="true"><div class="hill hill-back"></div><div class="hill hill-front"></div></div>
+    </section>
+
+    <section class="section learn-section" id="aprender" aria-labelledby="learn-title">
+      <div class="container">
+        <div class="section-top">
+          <span class="kicker">01 · LA ESCUELA DE DIGI</span>
+          <h2 id="learn-title">Un pequeño nutriente, <span class="blue">una gran misión</span></h2>
+          <p>Aprende tres cosas verdaderas sobre la vitamina D con palabras sencillas.</p>
+        </div>
+        <div class="fact-grid">
+          <article class="fact-card fact-a">
+            <div class="fact-icon" aria-hidden="true">☀️</div><div class="fact-number">1</div>
+            <h3>¡Hola, vitamina D!</h3>
+            <p>La vitamina D ayuda a tu cuerpo a <strong>absorber el calcio</strong> que necesitas.</p>
+            <button class="fact-more" type="button" data-fact="0" aria-expanded="false">Descubre más <span aria-hidden="true">＋</span></button>
+            <p class="fact-detail" hidden>El calcio es un mineral importante para los huesos y los dientes.</p>
+          </article>
+          <article class="fact-card fact-b">
+            <div class="fact-icon" aria-hidden="true">🦴</div><div class="fact-number">2</div>
+            <h3>¡Huesos en equipo!</h3>
+            <p>La vitamina D y el calcio trabajan juntos para <strong>mantener los huesos sanos</strong>.</p>
+            <button class="fact-more" type="button" data-fact="1" aria-expanded="false">Descubre más <span aria-hidden="true">＋</span></button>
+            <p class="fact-detail" hidden>Además de los nutrientes, moverse y comer variado ayuda a cuidar nuestro cuerpo.</p>
+          </article>
+          <article class="fact-card fact-c">
+            <div class="fact-icon" aria-hidden="true">🐟</div><div class="fact-number">3</div>
+            <h3>¿Dónde se encuentra?</h3>
+            <p>Podemos obtener vitamina D de alimentos como <strong>algunos pescados y productos fortificados</strong>.</p>
+            <button class="fact-more" type="button" data-fact="2" aria-expanded="false">Descubre más <span aria-hidden="true">＋</span></button>
+            <p class="fact-detail" hidden>Un profesional de salud puede orientar a la familia sobre si hace falta un suplemento.</p>
+          </article>
+        </div>
+        <div class="fact-strip"><span aria-hidden="true">💡</span><div><strong>Una regla de súper héroes:</strong> nunca tomes vitaminas por tu cuenta. Siempre consulta a un adulto.</div></div>
+      </div>
+    </section>
+
+    <section class="section product-section" id="producto" aria-labelledby="product-title">
+      <div class="container product-layout">
+        <div class="product-visual"><div class="product-circle"><span>☀</span><img src="assets/diglet_logo.webp" alt="Identidad visual Diglet Vitamina D" loading="lazy"></div><div class="strawberry-tag"><img src="assets/fresa.webp" alt="" loading="lazy"> Sabor fresa</div></div>
+        <div class="product-text">
+          <span class="kicker">02 · CONOCE TU EMPAQUE</span>
+          <h2 id="product-title">¿Qué hay dentro de la bolsita?</h2>
+          <p>Diglet contiene vitamina D3, también llamada <strong>colecalciferol</strong>. Esta bolsita reúne cinco sobres individuales para mantener todo organizado.</p>
+          <div class="product-formula"><span class="formula-sun">☀</span><div><strong>Conoce la vitamina D3</strong><span>Diglet 1,000 UI = 25 µg de colecalciferol por comprimido en su presentación comercial de referencia.</span></div></div><div class="product-stats">
+            <div><strong>5</strong><span>sobres individuales</span></div>
+            <div><strong>4</strong><span>tabletas por sobre</span></div>
+            <div><strong>20</strong><span>tabletas en total</span></div>
+          </div>
+          <p class="mini-note">La cantidad de tabletas de cada sobre <strong>no representa una dosis</strong>. Un adulto debe seguir la indicación de un profesional de salud y revisar la concentración indicada en el producto.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section games-section" id="aventuras" aria-labelledby="games-title">
+      <div class="container">
+        <div class="section-top">
+          <span class="kicker">03 · EL CLUB DE LOS EXPLORADORES</span>
+          <h2 id="games-title">¡Elige tu <span class="blue">aventura!</span></h2>
+          <p>Tres juegos de verdad, con retos, pistas y estrellas por lo que aprendes.</p>
+        </div>
+        <div class="guardian-activation" id="guardianActivation">
+          <div class="guardian-icon" aria-hidden="true">🛡️</div>
+          <div class="guardian-text"><strong>Un adulto abre la puerta de los juegos</strong><span>Los juegos se habilitan cuando el cuidador confirma que revisó las indicaciones de salud. No se necesita consumir ninguna tableta para jugar.</span></div>
+          <button class="button button-navy" id="guardianOpen" type="button">Soy adulto · Habilitar juegos</button>
+        </div>
+        <div class="games-grid">
+          <article class="game-card game-one">
+            <span class="game-emoji" aria-hidden="true">🦴</span><span class="game-no">JUEGO 01</span>
+            <h3>La misión del hueso fuerte</h3><p>Elige respuestas correctas para completar el medidor de conocimiento.</p>
+            <span class="game-meta">Preguntas · 4 desafíos</span>
+            <button class="button button-game" data-game="quiz" type="button" disabled>🔒 Habilitar con adulto</button>
+          </article>
+          <article class="game-card game-two">
+            <span class="game-emoji" aria-hidden="true">🧠</span><span class="game-no">JUEGO 02</span>
+            <h3>Memoria de súper alimentos</h3><p>Voltea cartas, encuentra las parejas y descubre pistas de nutrición.</p>
+            <span class="game-meta">Memoria · 4 parejas</span>
+            <button class="button button-game" data-game="memory" type="button" disabled>🔒 Habilitar con adulto</button>
+          </article>
+          <article class="game-card game-three">
+            <span class="game-emoji" aria-hidden="true">🗺️</span><span class="game-no">JUEGO 03</span>
+            <h3>La ruta secreta de Digi</h3><p>Guía al héroe, recoge tres pistas y llega a la meta de los huesos.</p>
+            <span class="game-meta">Laberinto · 3 pistas</span>
+            <button class="button button-game" data-game="maze" type="button" disabled>🔒 Habilitar con adulto</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section progress-section" id="progreso" aria-labelledby="progress-title">
+      <div class="container progress-inner">
+        <div class="progress-copy"><span class="kicker">04 · TU PASAPORTE DE EXPLORADOR</span><h2 id="progress-title">Mis estrellas de aprendizaje</h2><p>Ganas una estrella por completar cada juego. Las estrellas celebran lo que aprendes, <strong>no las tabletas que tomas</strong>.</p><div class="progress-count"><span id="starCount">0</span><span>de 3 estrellas conseguidas</span></div><button type="button" id="resetProgress" class="text-button">Reiniciar mis estrellas</button></div>
+        <div class="medals" aria-live="polite">
+          <div class="medal" data-medal="quiz"><span aria-hidden="true">★</span><strong>Huesos</strong><small>Por descubrir</small></div>
+          <div class="medal" data-medal="memory"><span aria-hidden="true">★</span><strong>Memoria</strong><small>Por descubrir</small></div>
+          <div class="medal" data-medal="maze"><span aria-hidden="true">★</span><strong>Explorador</strong><small>Por descubrir</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section adults-section" id="adultos" aria-labelledby="adults-title">
+      <div class="container adults-layout">
+        <div>
+          <span class="kicker">GUÍA PARA MADRES, PADRES Y CUIDADORES</span>
+          <h2 id="adults-title">Lo que conviene saber sobre la vitamina D3</h2>
+          <p>Información contrastada con fuentes médicas y pediátricas. El producto real y las indicaciones de tu profesional de salud siempre tienen prioridad.</p>
+          <div class="adult-caution"><strong>Atención a la concentración:</strong> para edades de 4 a 12 años, la ingesta diaria de referencia es <strong>600 UI (15 µg)</strong> sumando alimentos y otras fuentes. <strong>Diglet 1,000 UI contiene 25 µg por comprimido.</strong> No es una pauta automática para todos los niños.</div>
+          <div class="care-advice">
+            <h3>Consejos respaldados por fuentes pediátricas</h3>
+            <ul>
+              <li><strong>Consulta al pediatra</strong> antes de administrar suplementos, especialmente si el niño usa otros productos con vitamina D.</li>
+              <li><strong>Revisa cada envase:</strong> concentración, forma de administración, fecha de vencimiento y recomendaciones específicas.</li>
+              <li><strong>Guárdalo fuera del alcance infantil.</strong> Cuatro tabletas en un sobre no significan cuatro dosis para el mismo día.</li>
+            </ul>
+            <p class="source-note">Basado en recomendaciones generales de la Academia Estadounidense de Pediatría, NIH y MedlinePlus; no son indicaciones personalizadas.</p>
+          </div>
+        </div>
+        <div class="adult-accordions">
+          <details open><summary>¿Qué producto es Diglet Vitamina D3?</summary><p>El ingrediente activo es <strong>colecalciferol (vitamina D3)</strong>. Grupo Profármaco identifica Diglet 400 UI y 1,000 UI en <strong>comprimidos bucodispersables</strong> y con sabor a fresa. El fabricante de la presentación de 1,000 UI figura en su caja como <strong>SEID, S. A., España</strong>. <a href="https://www.grupoprofarmaco.com/soluciones/diglet-mantenimiento/" target="_blank" rel="noopener noreferrer">Consultar información del producto</a>.</p></details>
+          <details><summary>¿Qué diferencia hay entre 600 UI y 1,000 UI?</summary><p><strong>600 UI</strong> es la ingesta diaria de referencia para personas de 1 a 13 años según NIH; <strong>1,000 UI</strong> es la concentración de una presentación comercial Diglet. Que un comprimido contenga 1,000 UI no significa que esa sea la cantidad necesaria para todo niño de 4 a 12 años. El pediatra valora alimentación, estado de salud y tratamientos antes de orientar el uso.</p></details>
+          <details><summary>¿Cómo ayuda a huesos y dientes?</summary><p>La vitamina D permite absorber calcio y contribuye a mantener los huesos y dientes sanos. El ejercicio, una alimentación variada y los controles pediátricos completan el cuidado. La vitamina D también participa en procesos musculares e inmunitarios, pero no debe presentarse como tratamiento universal para prevenir infecciones.</p></details>
+          <details><summary>¿Qué alimentos aportan vitamina D?</summary><p>Entre las fuentes se encuentran pescados grasos como salmón o trucha, yema de huevo y productos <em>fortificados</em> cuya etiqueta indique vitamina D, por ejemplo ciertas leches, yogures o cereales. La cantidad varía por alimento y marca.</p></details>
+          <details><summary>¿Cómo se administra Diglet?</summary><p>La presentación comercial verificada de Diglet 1,000 UI es <strong>bucodispersable</strong>, es decir, diseñada para desintegrarse en la boca. No debe confundirse automáticamente con una tableta masticable. Para un niño, sigue el prospecto específico del producto y la orientación sanitaria; no se recomienda una pauta universal desde esta página.</p></details>
+          <details><summary>¿Qué hacer antes de suplementar?</summary><p>Consulta al profesional de salud si el niño necesita un suplemento y cuál es la concentración apropiada. Comprueba otros productos que contengan vitamina D y conserva el envase en un lugar inaccesible para los niños. Un exceso prolongado de vitamina D puede elevar peligrosamente el calcio en la sangre.</p></details>
+          <details><summary>¿Por qué los juegos no premian las tomas?</summary><p>Para que ningún niño quiera consumir vitaminas adicionales a cambio de premios. La autorización de un cuidador habilita los juegos en cualquier día, incluso cuando no corresponde tomar el suplemento. Las estrellas se ganan por aprender y jugar.</p></details>
+          <details class="sources-detail"><summary>Fuentes médicas y sobre Diglet</summary><p>Bibliografía consultada:</p><ul>
+            <li><a href="https://ods.od.nih.gov/factsheets/vitaminD-datosenespa%C3%B1ol/" target="_blank" rel="noopener noreferrer">NIH, vitamina D: datos en español</a></li>
+            <li><a href="https://www.healthychildren.org/English/healthy-living/nutrition/Pages/Where-We-Stand-Vitamins.aspx" target="_blank" rel="noopener noreferrer">American Academy of Pediatrics, vitaminas en niños</a></li>
+            <li><a href="https://medlineplus.gov/spanish/ency/article/002405.htm" target="_blank" rel="noopener noreferrer">MedlinePlus, vitamina D</a></li>
+            <li><a href="https://www.grupoprofarmaco.com/soluciones/diglet-mantenimiento/" target="_blank" rel="noopener noreferrer">Grupo Profármaco, Diglet Mantenimiento</a></li>
+          </ul><p>No se atribuyen recomendaciones particulares a médicos que no hayan intervenido en el contenido.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><div><strong><span aria-hidden="true">☀</span> Diglet Aventuras</strong><p>Descubre, aprende y juega con Digi.</p></div><p class="footer-legal">Contenido educativo de referencia. No representa una indicación médica personalizada ni sustituye el prospecto del producto. Experiencia digital independiente de las entidades citadas.</p></div></footer>
+
+  <dialog id="guardianDialog" aria-labelledby="guardianTitle" class="dialog guardian-dialog"><div class="dialog-inner"><button type="button" class="close-dialog" data-close aria-label="Cerrar">×</button><div class="dialog-spark" aria-hidden="true">🛡️</div><h2 id="guardianTitle">Un momento para el adulto</h2><p>Para cuidar a los pequeños, revisa las indicaciones del envase y recuerda que la suplementación siempre debe seguir la orientación de un profesional de salud. Puedes habilitar los juegos sin administrar ninguna tableta.</p><div class="guardian-options"><button type="button" data-authorize="revisado">✓ Comprendo y habilito los juegos</button><button type="button" data-authorize="no-dosis">✓ Solo vamos a aprender y jugar</button></div><small>El acceso a los juegos no depende del consumo de vitaminas. No pedimos nombres ni registramos dosis.</small></div></dialog>
+  <dialog id="gameDialog" aria-labelledby="gameTitle" class="dialog game-dialog"><div class="game-shell"><header class="game-dialog-header"><div><span id="gameKicker">MISIÓN DE DIGI</span><h2 id="gameTitle">Tu aventura</h2></div><button type="button" class="close-dialog" data-close aria-label="Cerrar juego">×</button></header><div id="gameArea" aria-live="polite"></div><div class="game-dialog-footer"><span>Aprendemos jugando, sin tomar tabletas para ganar.</span><button id="restartGame" class="text-button" type="button">Reiniciar juego ↺</button></div></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
